@@ -1,0 +1,96 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  script(src='https://kit.fontawesome.com/64a80a3748.js' crossorigin='anonymous')
+  link(rel='stylesheet' href='../static/style.css')
+  link(rel='stylesheet' href='../static/responsive.css')
+  title Mentor&apos;s Academy-Transforming Online Education
+nav.navbar.background.h-nav-resp
+  ul.nav-list.v-class-resp
+    .logo
+      img(src='../static/logo3.png' alt='Logo')
+    li
+      a(href='#') Home
+    li
+      a(href='#about') About
+    li
+      a(href='#services') Services
+    li
+      a(href='#contact') Contact Us
+  .rightNav.v-class-resp
+    i.fa.fa-search
+    input#search(type='text' name='search')
+    button.btn.btn-sm Search
+  .burger
+    .line
+    .line
+    .line
+section.background.firstSection
+  .box-main
+    .firstHalf
+      p.text-big Welcome to Mentor&apos;s Academy
+      p.text-small
+        | In this World of 7 Billion People in the World we need to educate all of them and
+        | we
+        | are proud to say that The Future of Education is Here
+      .buttons
+        form(action='/sign' target='_blank')
+          button.btn Register Now!
+        form(action='/log' target='_blank')
+          button.btn(type='submit') Log In
+    .secondHalf
+      img(src='/static/logo.png' alt='Laptop Image')
+section#services.section
+  .paras
+    p.sectionTag.text-big End of Your Search is Here
+    p.sectionSubTag.text-small
+      | In our fast-changing world, this ability to seize new learning
+      | opportunities with eagerness and curiosity is more important than ever for your career as well as your
+      | personal life. In just the past decade, the rapid advance of technology and the information revolution
+      | have created entirely new disciplines - and highly sought-after career paths - in areas like data
+      | science and machine learning. Similarly, we have seen a flourishing of research and writing in areas of
+      | self-improvement, happiness, and mindfulness, giving us new tools to enhance our well-being - provided
+      | we are open to learning them.
+  .thumbnail
+    img.imgFluid(src='https://source.unsplash.com/900x900/?coding,laptop,search' alt='')
+section#about.section.section-left
+  .paras
+    p.sectionTag.text-big Transforming Education In India
+    p.sectionSubTag.text-small
+      | The most obvious educational professionals we encounter in our lives are
+      | teachers. From your first kindergarten teachers that taught you how to share, to the college professors
+      | that helped you learn to interpret modern art, to expert online instructors that help you learn to use
+      | data science at your job, teaching can be an incredibly meaningful career path no matter what subject
+      | and level of student you want to work with. It&rsquo;s also a very popular career: according to the Bureau of
+      | Labor Statistics, there are over 3 million kindergarten, elementary school, middle school, and high
+      | school teachers in America.Teachers and counselors that work directly with students aren&rsquo;t the only type
+      | of educators, of course.
+  .thumbnail
+    img.imgFluid(src='https://source.unsplash.com/900x900/?education,html' alt='')
+section.section
+  .paras
+    p.sectionTag.text-big Lets Grow Together
+    p.sectionSubTag.text-small
+      | For many, education is synonymous with schooling, and with preparation
+      | for a subsequent career. From this perspective, education may seem like little more than a series of
+      | boxes to check: show up at class, learn the material, do the homework, pass the test, and, finally, get
+      | the diploma that gets you the job. This kind of rote, almost transactional experience of learning can be
+      | all too common, and it represents a misunderstanding of what it means to be an educator - or an educated
+      | person.Instead, education can and should be an ongoing process of learning and discovery that extends
+      | beyond the hours, months, and years you spend in school (whether on-campus or online).
+  .thumbnail
+    img.imgFluid(src='https://source.unsplash.com/900x900/?teaching,javascript' alt='')
+hr
+section#contact.contact
+  h1.contactHeading Contact Us
+  form(action="/contact", method="post" class="form")
+    input#name.form-input(type='text' name='name' placeholder='Enter your Name')
+    input#phone.form-input(type='phone' name='phone' placeholder='Enter your Phone Number')
+    input#email.form-input(type='email' name='email' placeholder='Enter your Email Id')
+    textarea#text.form-input(name='text' cols='30' rows='5' placeholder='Elaborate your Concern')
+    button.btn.btn-sm.btn-dark Submit
+footer.background
+  p.text-footer
+    | Copyright &copy; 2020 - www.MentorsAcademy.com - All Rights Reserved
+script(src='static/resp.js')

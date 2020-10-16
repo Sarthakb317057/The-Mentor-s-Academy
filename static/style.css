@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    cursor: pointer;
+    
+}
+.logo{
+    width: 20%;
+
+}
+.logo img{
+    width: 50%;
+    /* border: 2px solid white; */
+    /* border-radius: 80px; */
+    filter: invert(100%);
+    transform: scale(1.7);
+    margin: 10px;
+}
+.logo img:hover{
+    transform: scale(2);
+}
+.nav-list{
+    width: 70%;
+    display: flex;  
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 26px 25px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.nav-list li a:hover{
+    color: rgb(141, 140, 140);
+}
+
+.rightNav{
+    width: 50%;
+    text-align: right;
+    padding: 0px 23px;
+}
+.rightNav i{
+    /* width: 50%; */
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+i{
+    filter: invert(100%);
+    display: block;
+    margin: auto;
+
+}
+
+.background{
+    background: rgba(0,0,0,0.7) url('../static/img7.webp');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstSection{
+    height: 100vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: auto;
+    max-width: 50%;
+    height: 80%;
+}
+
+.firstHalf{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondHalf{
+    width: 30%;
+}
+
+
+.secondHalf img{
+    width: 120%;
+    display: block;
+    margin: auto;
+    filter: invert(100%);
+    margin-left: 25px;
+}
+
+.secondHalf img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.text-big{
+    font-size: 41px; 
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.text-small{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.buttons{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 20px;
+}
+
+.btn:hover{
+    background-color: rgb(43, 38, 38);
+}
+
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.btn-dark{
+    color: black;
+    border: 2px solid grey;
+}
+.btn-dark:hover{
+    color: white;
+    background-color:rgb(82, 80, 80);
+}
+.section{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+.section-left{
+    flex-direction: row-reverse;
+}
+
+.paras{
+    padding: 0px 65px;
+}
+
+.sectionTag{
+    padding: 16px 0px;
+}
+
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thumbnail img{
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 19px;
+}
+
+
+.contact{
+    background-color: #d6d2d2;
+    height: 580px;
+}
+
+.contactHeading{
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+}
+
+.form{
+    max-width: 62%;
+    margin: 20px auto;
+}
+.form-input{
+    padding: 5px 13px;
+    margin: 14px 0px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-footer{
+    text-align: center;
+    padding: 20px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}

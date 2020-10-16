@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(../static/bg2.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container{
+    color: #2f2020;
+    position: absolute;
+    top: 25%;
+    right: 8%;
+    flex-wrap: wrap;
+}
+
+.container h1{
+    font-family: 'Caveat', cursive;
+    width: 50%;
+    display: inline-block;
+    font-size: 35px;
+    border-bottom: 5px solid #2f2020b8;
+    margin-bottom: 15px;
+    padding: 13px 0px;
+}
+
+.box{
+    width: 100%;
+    border-bottom: 2px solid #2f2020b8;
+    margin: 22px 0px;
+}
+
+.box input{
+    font-family: 'Caveat', cursive;
+    background: none;
+    width: 75%;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 5px 10px;
+}
+::placeholder{
+    color: black;
+}
+.box i{
+    width: 25px;
+    text-align: center;
+}
+
+.logo{
+    position: absolute;
+    top: 25%;
+    left: 17%;
+    filter: invert(100%);
+    /* transform: rotate(13deg); */
+    flex-wrap: wrap;
+}
+
+.btn{
+    font-family: 'Caveat', cursive;
+    cursor: pointer;
+    outline: none;
+    margin: 17px 0px;
+    padding: 10px 21px;
+    border-radius: 10px;
+    border: 2px solid #2f2020b8;
+    font-size: 20px;
+    background: none;
+    color: #2f2020;
+    font-weight: bold;
+}
+
+.btn:hover{
+    color: white;
+    background-color: #2f2020b8;
+    opacity: 0.5;
+}

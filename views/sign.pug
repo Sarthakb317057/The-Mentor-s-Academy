@@ -1,0 +1,24 @@
+doctype html
+head
+  title Sign In Form
+  // Place your kit's code here
+  script(src='https://kit.fontawesome.com/64a80a3748.js' crossorigin='anonymous')
+  link(rel='stylesheet' href='../static/signup.css')
+img.logo(src='../static/logo.png' alt='')
+.container
+  h1 Sign In
+  form(action="/sign" method="post" class="form")
+    .box
+      i.fa.fa-user
+      input#name(type='text' name='name' placeholder='Enter your Name')
+    .box
+      i.fa.fa-envelope
+      input#email(type='email' name='email' placeholder='Enter Your Email Id')
+    .box
+      i.fa.fa-mobile
+      input#phone(type='phone' name='phone' placeholder='Enter Your Phone Number')
+    .box
+      i.fa.fa-key
+      input#password(type='password' name='password' placeholder='Enter Your password')
+    button.btn Sign In
+    
